@@ -4,7 +4,7 @@ function App() {
   const [step, setStep] = useState(1);
 
   const defaultCircleStyle =
-    "w-20 h-20 flex justify-center items-center font-semibold text-lg text-white rounded-full ";
+    "w-12 h-12 flex justify-center items-center font-bold text-2xl text-white rounded-full ";
   const defaultLine = "h-2 flex-1 my-auto ";
 
   const styler = (type, userStep) => {
@@ -28,19 +28,19 @@ function App() {
       <div className="w-1/3 min-w-[300px] mx-auto my-4">
         <div className="flex justify-between">
           <div className="w-full flex">
-            <div className={styler("STEP", 1)}>{step > 1 ? "✓" : "Step 1"}</div>
+            <div className={styler("STEP", 1)}>{step > 1 ? "✓" : "1"}</div>
             <div className={styler("LINE", 1)}></div>
           </div>
           <div className="w-full flex">
-            <div className={styler("STEP", 2)}>{step > 2 ? "✓" : "Step 2"}</div>
+            <div className={styler("STEP", 2)}>{step > 2 ? "✓" : "2"}</div>
             <div className={styler("LINE", 2)}></div>
           </div>
           <div className="w-full flex">
-            <div className={styler("STEP", 3)}>{step > 3 ? "✓" : "Step 3"}</div>
+            <div className={styler("STEP", 3)}>{step > 3 ? "✓" : "3"}</div>
             <div className={styler("LINE", 3)}></div>
           </div>
           <div className="w-full flex">
-            <div className={styler("STEP", 4)}>{step > 4 ? "✓" : "Step 4"}</div>
+            <div className={styler("STEP", 4)}>{step > 4 ? "✓" : "4"}</div>
           </div>
         </div>
       </div>
